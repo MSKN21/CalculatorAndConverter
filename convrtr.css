@@ -1,0 +1,180 @@
+.convtype {
+  margin-top: 3px;
+  width: 700px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-row: 50px;
+  grid-column-gap: 10px;
+}
+
+.selconv {
+  width: 700px;
+  display: grid;
+  grid-template-columns: 40% 10% 40% 10%;
+  grid-row: 50px;
+}
+
+.convans {
+  width: 700px;
+  display: grid;
+  grid-template-columns: 40% 12% 40% 8%;
+  grid-row: 50px;
+}
+
+#swap {
+  margin: 6px;
+  padding: 1px 8px;
+  font-size: 25px;
+  border-radius: 8px;
+  background-color: rgb(7, 31, 34);
+  color: white;
+}
+
+#from,
+#to,
+#ctype {
+  margin: 6px;
+  border-radius: 3px;
+}
+
+#infrom,
+#outto,
+#entr {
+  margin: 6px;
+}
+
+#cntype {
+  height: 40px;
+  width: 480px;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+#submit {
+  height: 40px;
+  width: 170px;
+  font-size: 26px;
+  background-color: rgb(7, 31, 34);
+  color: white;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-family: "Times New Roman";
+  letter-spacing: 0.9px;
+}
+
+#inpfrom,
+#toout {
+  height: 40px;
+  width: 290px;
+  font-size: 20px;
+  background-color: rgb(28, 36, 33);
+  color: rgb(178, 228, 190);
+  border-radius: 8px;
+}
+
+#toout {
+  font-family: "Times New Roman";
+  font-size: 24px;
+}
+
+#frm1,
+#toland {
+  width: 270px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+option:hover {
+  cursor: pointer;
+}
+
+#frm1,
+#toland,
+#cntype {
+  background-color: rgb(37, 35, 38);
+  color: rgba(174, 245, 228);
+  border: black 1px;
+  font-family: "Times New Roman";
+  font-size: 24.8px;
+  letter-spacing: 0.9px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#totext,
+#equaltext {
+  font-size: 30px;
+  padding: 6px;
+  font-family: "Times New Roman";
+  color: rgb(217, 249, 255);
+}
+
+#totext {
+  text-align: center;
+}
+
+#equaltext {
+  font-size: 35px;
+  padding-left: 40px;
+}
+
+@media (max-width: 700px) {
+  .convtype {
+    margin-top: 3px;
+    width: 250px;
+    grid-template-columns: 1fr 50px;
+  }
+
+  .selconv {
+    margin-top: 3px;
+    width: 250px;
+    grid-template-columns: 1fr 100px;
+  }
+
+  .convans {
+    width: 250px;
+    grid-template-columns: 1fr 100px;
+  }
+
+  #cntype {
+    width: 235px;
+    font-size: 26px;
+    border-radius: 5px;
+  }
+
+  #submit {
+    width: 100px;
+    font-size: 26px;
+    margin-left: 8px;
+    margin-right: 5px;
+    letter-spacing: 0.9px;
+    padding: 0px 2px;
+  }
+
+  #swap {
+    padding: 1px 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #infrom {
+    margin: 7px 6px;
+  }
+
+  #outto {
+    margin: 0px 6px;
+    margin-bottom: 5px;
+  }
+  #toout {
+    width: 330px;
+  }
+  #equaltext {
+    padding-left: 0px;
+  }
+}

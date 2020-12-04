@@ -1,0 +1,168 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cicstyle.css" />
+    <link rel="stylesheet" href="convrtr.css" />
+  </head>
+  <body>
+    <header style="background-color: burlywood">
+      <p>
+        <strong><i>CALCULATOR</i></strong>
+      </p>
+    </header>
+
+    <div class="main">
+      <div class="converter">
+        <div class="convtype">
+          <div id="ctype">
+            <form action="">
+              <select name="cnvtype" id="cntype">
+                <option value="0" id="">Distance</option>
+                <option value="1" id="">Duration</option>
+                <option value="2" id="">Mass</option>
+              </select>
+            </form>
+          </div>
+          <div id="entr">
+            <button onclick="convresult()" id="submit">Convert</button>
+          </div>
+        </div>
+        <div class="selconv">
+          <div id="from">
+            <form action="">
+              <select name="land" id="frm1">
+                <option class="opt" value="0" id="">miles</option>
+                <option class="opt" value="1" id="">kilometres</option>
+                <option class="opt" value="2" id="">metres</option>
+                <option class="opt" value="3" id="">centimetres</option>
+                <option class="opt" value="4" id="">millimetres</option>
+              </select>
+            </form>
+          </div>
+          <div id="totext">To</div>
+          <div id="to">
+            <form action="">
+              <select name="land" id="toland">
+                <option class="opt" value="0" id="">miles</option>
+                <option class="opt" value="1" id="">kilometres</option>
+                <option class="opt" value="2" id="">metres</option>
+                <option class="opt" value="3" id="">centimetres</option>
+                <option class="opt" value="4" id="">millimetres</option>
+              </select>
+            </form>
+          </div>
+          <div style="text-align: center">
+            <button id="swap" onclick="swap()">&#8651;</button>
+          </div>
+        </div>
+        <div class="convans">
+          <div id="infrom">
+            <input type="number" min="0" id="inpfrom" />
+          </div>
+          <div id="equaltext">&#8658;</div>
+          <div id="outto">
+            <input type="text" id="toout" readonly />
+          </div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="main-box">
+        <div id="bar">
+          <input
+            onmouseover="this.focus()"
+            id="barip"
+            type="text"
+            autofocus
+            style="background-color: rgb(28, 36, 33); color: rgb(178, 228, 190)"
+          />
+        </div>
+        <div class="blocks" onmouseover="focs()">
+          <div class="keys">
+            <button class="nums" value="7" id="num7" onclick="update(this)">
+              7
+            </button>
+            <button class="nums" value="8" id="num8" onclick="update(this)">
+              8
+            </button>
+            <button class="nums" value="9" id="num9" onclick="update(this)">
+              9
+            </button>
+            <button class="nums" value="4" id="num4" onclick="update(this)">
+              4
+            </button>
+            <button class="nums" value="5" id="num5" onclick="update(this)">
+              5
+            </button>
+            <button class="nums" value="6" id="num6" onclick="update(this)">
+              6
+            </button>
+            <button class="nums" value="1" id="num1" onclick="update(this)">
+              1
+            </button>
+            <button class="nums" value="2" id="num2" onclick="update(this)">
+              2
+            </button>
+            <button class="nums" value="3" id="num3" onclick="update(this)">
+              3
+            </button>
+            <button class="nums" value="00" id="hundred" onclick="update(this)">
+              00
+            </button>
+            <button class="nums" value="0" id="num0" onclick="update(this)">
+              0
+            </button>
+            <button class="nums" value="." id="dot" onclick="update(this)">
+              .
+            </button>
+          </div>
+          <div class="keys">
+            <button class="nums" value="/" id="divide" onclick="update(this)">
+              /
+            </button>
+            <button class="nums" value="C" id="clear" onclick="empty(this)">
+              C
+            </button>
+            <button class="nums" id="pop" onclick="popone(this)">
+              &#8678;
+            </button>
+            <button class="nums" value="*" id="mul" onclick="update(this)">
+              *
+            </button>
+            <button class="nums" value="%" id="mod" onclick="update(this)">
+              %
+            </button>
+            <button class="nums" value="&#8634;" id="cbrt" onclick="prev()">
+              &#8634;
+            </button>
+            <button class="nums" value="+" id="add" onclick="update(this)">
+              +
+            </button>
+            <button class="nums" value="(" id="opbr" onclick="update(this)">
+              (
+            </button>
+            <button class="nums" value=")" id="csbr" onclick="update(this)">
+              )
+            </button>
+            <button class="nums" value="-" id="sub" onclick="update(this)">
+              -
+            </button>
+            <button class="nums" value="^" id="pow" onclick="pow(this)">
+              x<sup>y</sup>
+            </button>
+            <button class="nums" value="=" id="ans" onclick="finalresult()">
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>&copy;copyright 2020 by #MSKN21</p>
+    </div>
+    <script src="converterjs.js"></script>
+    <script src="cicjs.js"></script>
+  </body>
+</html>
